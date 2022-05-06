@@ -1,63 +1,18 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
 *{
 	box-sizing: border-box;
 }
+
 #app{
 	border: 1px solid black;
 	width: 500px;
 	height: 500px;
+	margin: auto;
 	font-family: sans-serif;
 	font-weight: bold;
 	display: flex;
 	flex-direction: column;
 }
+
 .header{
 	display: flex;
 	align-items: center;
@@ -67,14 +22,17 @@ table {
 .header > *{
 	color: #eeeeee;
 }
+
 .header__turn{
 	padding: 12px;
 }
+
 .header__status{
 	padding: 12px;
 	flex-grow: 1;
 	text-align: center;
 }
+
 .header__restart{
 	display: flex;
 	align-items: center;
@@ -85,17 +43,20 @@ table {
 	cursor: pointer;
 }
 
+/* displays the board in a 3x3 grid pattern */
 .board{
 	display: grid;
 	background: #cccccc;
 	gap: 10px;
 	padding: 10px;
+	/* ensures board tiles take up full board space */
 	flex-grow: 1;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 
 }
 
+/* styles board tiles */
 .board__tile{
 	background: #ffffff;
 	cursor: pointer;
@@ -107,10 +68,12 @@ table {
 	color: #222222;
 }
 
+/* applies shade to tiles on hover for easier visibility */
 .board__tile:hover{
 	background-color: #eeeeee;
 }
 
+/* colors winners markers green when a winning combination is found */
 .board__tile--winner{
 	color: green;
 }
