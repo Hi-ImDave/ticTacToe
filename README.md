@@ -1,8 +1,20 @@
-# ticTacToe
-Tic Tac Toe
+# TicTacToe
+My personal website that highlights recent projects I've completed as well as personal projects I have completed/am currently working on.
 
-Currently a standalone game featuring X's and O's, this is a simple tic tac toe game that can be played by two people on the same machine.
 
- I built this project to expand my understanding of Object Oriented Programming (OOP). While working on the game I was having an issue with the display of markers on a few of the tiles. Thanks to to the modularity of OOP, it was pretty easy and intuitive to narrow down where the problem was. 
+![alt tag](assets/ticTacToeGif.gif)
 
-I plan to integrate this game with another project of mine, Henry's Space Odyssey. I'm going to alter the theme and design of the game to be space oriented. Possible features include playable against the machine, instead of X's and O's markers will be planets.
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript
+
+My learning was focused on making a simple UI and a smooth UX, while improving my logical thinking process.
+
+## Optimizations
+
+When I improve this project I would give it styling for a space-oriented theme so I can integrate the game with Henrys Space Odyssey
+
+## Lessons Learned:
+
+I learned that OOP can greatly simplify complicated tasks.
+
