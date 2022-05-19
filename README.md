@@ -1,5 +1,5 @@
 # TicTacToe
-My personal website that highlights recent projects I've completed as well as personal projects I have completed/am currently working on.
+Tic tac toe game to pass the time.
 
 
 ![alt tag](assets/ticTacToeGif.gif)
@@ -12,7 +12,7 @@ My learning was focused on making a simple UI and a smooth UX, while improving m
 
 ## Optimizations
 
-When I improve this project I would give it styling for a space-oriented theme so I can integrate the game with Henrys Space Odyssey
+When I improve this project I would give it styling for a space-oriented theme so I can integrate the game with Henrys Space Odyssey. I would also implement an AI player.
 
 ## Lessons Learned:
 
